@@ -9,7 +9,9 @@ window.addEventListener("load", function() {
 
             // sort array items base on the hourInSpace property
             teamArr.sort((a, b) => b.hoursInSpace - a.hoursInSpace);
-
+            container.innerHTML += `
+            <h2>There are ${teamArr.length} of them.</h2>
+            `;
 
             for (let i = 0; i < teamArr.length; i++) {
 
