@@ -9,6 +9,8 @@ window.addEventListener("load", function() {
 
             // sort array items base on the hourInSpace property
             teamArr.sort((a, b) => b.hoursInSpace - a.hoursInSpace);
+
+            // add a count of the astronauts
             container.innerHTML += `
             <h2>There are ${teamArr.length} of them.</h2>
             `;
@@ -36,9 +38,6 @@ window.addEventListener("load", function() {
                 </div>
                 `;
             } 
-            
-            // add a count of the astronauts
-
         });
     });
 });
